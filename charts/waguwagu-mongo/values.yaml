@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: mongo-express
+  repository: mongo
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
@@ -41,7 +41,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 8081
+  port: 27017
 
 ingress:
   enabled: false
@@ -73,14 +73,20 @@ livenessProbe:
   failureThreshold: 3
   successThreshold: 1
   tcpSocket:
-    port: 8081
+    port: 27017
 
 readinessProbe:
   initialDelaySeconds: 10
   failureThreshold: 3
   successThreshold: 1
   tcpSocket:
-    port: 8081
+    port: 27017
+
+env:
+  - name: MONGO_INITDB_ROOT_USERNAME
+    value: root
+  - name: MONGO_INITDB_ROOT_PASSWORD
+    value: example
 
 autoscaling:
   enabled: false
@@ -107,4 +113,3 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-

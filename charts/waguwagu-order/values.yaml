@@ -40,33 +40,14 @@ ingress:
 
 resources: {}
 
-livenessProbe:
-  httpGet:
-    path: /actuator/health
-    port: 8080
-  initialDelaySeconds: 100
-  periodSeconds: 20
-  timeoutSeconds: 10
-  failureThreshold: 5
-  successThreshold: 1
-
-readinessProbe:
-  httpGet:
-    path: /actuator/health
-    port: 8080
-  initialDelaySeconds: 100
-  periodSeconds: 10
-  timeoutSeconds: 10
-  failureThreshold: 5
-  successThreshold: 1
 
 env:
-  - name: "redis"
-    value: "waguwagu-redis"
-  - name: "SPRING_DATA_MONGODB_URI"
-    value: "mongodb://waguwagu-mongo:27017/waguwagu"
-  - name: "SPRING_KAFKA_BOOTSTRAP_SERVERS"
-    value: "34.71.194.186:9094"
+  - name: MONGO_INITDB_ROOT_USERNAME
+    value: root
+  - name: MONGO_INITDB_ROOT_PASSWORD
+    value: example
+  - name: SPRING_DATA_MONGODB_URI
+    value: mongodb://root:example@waguwagu-waguwagu-mongo:27017/waguwagu
 
 autoscaling:
   enabled: false
