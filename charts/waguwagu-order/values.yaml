@@ -49,7 +49,7 @@ env:
   - name: SPRING_DATA_MONGODB_URI
     value: mongodb://root:example@waguwagu-waguwagu-mongo:27017/waguwagu
   - name: "redis"
-    value: "waguwagu-redis"
+    value: "waguwagu-waguwagu-redis"
     
 autoscaling:
   enabled: false
