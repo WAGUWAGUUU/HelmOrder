@@ -48,7 +48,9 @@ env:
     value: example
   - name: SPRING_DATA_MONGODB_URI
     value: mongodb://root:example@waguwagu-waguwagu-mongo:27017/waguwagu
-
+  - name: "redis"
+    value: "waguwagu-redis"
+    
 autoscaling:
   enabled: false
   minReplicas: 1
