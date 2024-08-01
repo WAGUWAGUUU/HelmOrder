@@ -48,8 +48,10 @@ env:
     value: example
   - name: SPRING_DATA_MONGODB_URI
     value: mongodb://root:example@waguwagu-waguwagu-mongo:27017/waguwagu
-  - name: "redis"
-    value: "waguwagu-waguwagu-redis"
+  - name: SPRING_DATA_REDIS_HOST
+    value: waguwagu-waguwagu-redis
+  - name: SPRING_DATA_REDIS_PORT
+    value: "6379"
     
 autoscaling:
   enabled: false
