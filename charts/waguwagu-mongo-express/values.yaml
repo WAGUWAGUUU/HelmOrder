@@ -73,14 +73,14 @@ livenessProbe:
   failureThreshold: 3
   successThreshold: 1
   tcpSocket:
-    port: 27017
+    port: 8081
 
 readinessProbe:
   initialDelaySeconds: 10
   failureThreshold: 3
   successThreshold: 1
   tcpSocket:
-    port: 27017
+    port: 8081
 
 env:
   - name: ME_CONFIG_MONGODB_ADMINUSERNAME
