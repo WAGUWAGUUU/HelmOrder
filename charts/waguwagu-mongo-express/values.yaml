@@ -88,10 +88,10 @@ env:
     value: root
   - name: ME_CONFIG_MONGODB_ADMINPASSWORD
     value: example
-  - name: ME_CONFIG_MONGODB_URL
-    value: mongodb://root:example@waguwagu-waguwagu-mongo:27017/
-  - name: ME_CONFIG_BASICAUTH
-    value: "false"
+  - name: ME_CONFIG_MONGODB_SERVER
+    value: waguwagu-waguwagu-mongo
+  - name: ME_CONFIG_MONGODB_ENABLE_ADMIN
+    value: "true"
 
 autoscaling:
   enabled: false
