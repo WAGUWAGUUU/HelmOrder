@@ -68,19 +68,19 @@ resources: {}
   #   cpu: 100m
   #   memory: 128Mi
 
-# livenessProbe:
-#   initialDelaySeconds: 10
-#   failureThreshold: 3
-#   successThreshold: 1
-#   tcpSocket:
-#     port: 27017
+livenessProbe:
+  initialDelaySeconds: 10
+  failureThreshold: 3
+  successThreshold: 1
+  tcpSocket:
+    port: 27017
 
-# readinessProbe:
-#   initialDelaySeconds: 10
-#   failureThreshold: 3
-#   successThreshold: 1
-#   tcpSocket:
-#     port: 27017
+readinessProbe:
+  initialDelaySeconds: 10
+  failureThreshold: 3
+  successThreshold: 1
+  tcpSocket:
+    port: 27017
 
 env:
   - name: MONGO_INITDB_ROOT_USERNAME
@@ -88,7 +88,7 @@ env:
   - name: MONGO_INITDB_ROOT_PASSWORD
     value: example
   - name: MONGO_INITDB_DATABASE
-    value: admin
+    value: waguwagu
 
 autoscaling:
   enabled: false
