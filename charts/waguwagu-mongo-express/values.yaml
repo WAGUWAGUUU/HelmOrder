@@ -84,8 +84,6 @@ readinessProbe:
     port: 8081
 
 env:
-  - name: ME_CONFIG_MONGODB_SERVER
-    value: waguwagu-waguwagu-mongo
   - name: ME_CONFIG_MONGODB_ADMINUSERNAME
     value: root
   - name: ME_CONFIG_MONGODB_ADMINPASSWORD
