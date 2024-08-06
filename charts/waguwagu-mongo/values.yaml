@@ -89,7 +89,7 @@ env:
     value: example
   - name: MONGO_INITDB_DATABASE
     value: admin
-    
+
 autoscaling:
   enabled: false
   minReplicas: 1
