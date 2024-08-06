@@ -87,7 +87,9 @@ env:
     value: root
   - name: MONGO_INITDB_ROOT_PASSWORD
     value: example
-
+  - name: MONGO_INITDB_DATABASE
+    value: admin
+    
 autoscaling:
   enabled: false
   minReplicas: 1
