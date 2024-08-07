@@ -85,12 +85,18 @@ readinessProbe:
 
 env:
   - name: ME_CONFIG_MONGODB_ADMINUSERNAME
-    value: root
+    valueFrom:
+      secretKeyRef:
+        name: mongo-secret
+        key: mongo-user
   - name: ME_CONFIG_MONGODB_ADMINPASSWORD
-    value: example
+    valueFrom:
+      secretKeyRef:
+        name: mongo-secret
+        key: mongo-password
   - name: ME_CONFIG_MONGODB_URL
-    value: mongodb://root:example@waguwagu-waguwagu-mongo:27017/  
-  - name: ME_CONFIG_MONGODB_ENABLE_ADMIN
+    value: mongodb://root:example@waguwagu-waguwagu-mongo:27017/
+  - name: ME_CONFIG_BASICAUTH
     value: "false"
 
 autoscaling:
