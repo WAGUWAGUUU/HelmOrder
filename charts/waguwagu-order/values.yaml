@@ -43,7 +43,7 @@ resources: {}
 
 env:
   - name: "SPRING_DATA_MONGODB_URI"
-    value: "mongodb://waguwagu-waguwagu-mongo:27017/waguwagu"
+    value: "mongodb://waguwagu-waguwagu-mongo:27017/waguwagu?authSource=admin"
   - name: SPRING_DATA_REDIS_HOST
     value: waguwagu-waguwagu-redis
   - name: SPRING_DATA_REDIS_PORT
