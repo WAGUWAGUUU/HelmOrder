@@ -86,7 +86,7 @@ env:
   - name: "MONGO_INITDB_ROOT_USERNAME"
     value: "root"
   - name: "MONGO_INITDB_ROOT_PASSWORD"
-    value: "1234"
+    value: "example"
   - name: "MONGO_INITDB_DATABASE"
     value: "waguwagu"
 
