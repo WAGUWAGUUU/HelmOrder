@@ -83,12 +83,12 @@ readinessProbe:
     port: 27017
 
 env:
-- name: ME_CONFIG_MONGODB_ADMINUSERNAME
-  value: root
-- name: ME_CONFIG_MONGODB_ADMINPASSWORD
-  value: example
-- name: MONGO_INITDB_DATABASE
-  value: waguwagu
+  - name: ME_CONFIG_MONGODB_ADMINUSERNAME
+    value: root
+  - name: ME_CONFIG_MONGODB_ADMINPASSWORD
+    value: example
+  - name: MONGO_INITDB_DATABASE
+    value: waguwagu
 
 autoscaling:
   enabled: false
