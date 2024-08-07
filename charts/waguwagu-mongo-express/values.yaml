@@ -88,8 +88,6 @@ env:
     value: root
   - name: ME_CONFIG_MONGODB_ADMINPASSWORD
     value: example
-  - name: ME_CONFIG_MONGODB_SERVER
-    value: waguwagu-waguwagu-mongo
   - name: ME_CONFIG_MONGODB_ENABLE_ADMIN
     value: "true"
 
