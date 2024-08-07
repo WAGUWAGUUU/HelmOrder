@@ -89,7 +89,7 @@ env:
   - name: "ME_CONFIG_MONGODB_ADMINPASSWORD"
     value: "1234"
   - name: "ME_CONFIG_MONGODB_URL"
-    value: "mongodb://root:1234@waguwagu-waguwagu-mongo:27017/"
+    value: "mongodb://root:1234@waguwagu-waguwagu-mongo:27017"
   - name: "ME_CONFIG_BASICAUTH"
     value: "false"
 
