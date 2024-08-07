@@ -87,8 +87,6 @@ env:
     value: root
   - name: ME_CONFIG_MONGODB_ADMINPASSWORD
     value: example
-  - name: MONGO_INITDB_DATABASE
-    value: waguwagu
 
 autoscaling:
   enabled: false
