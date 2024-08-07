@@ -84,14 +84,14 @@ readinessProbe:
     port: 8081
 
 env:
-  - name: ME_CONFIG_MONGODB_ADMINUSERNAME
-    value: root
-  - name: ME_CONFIG_MONGODB_ADMINPASSWORD
-    value: example
-  - name: ME_CONFIG_MONGODB_URL
-    value: mongodb://root:example@waguwagu-waguwagu-mongo:27017/
-  - name: ME_CONFIG_BASICAUTH
-    value: false
+  - name: "ME_CONFIG_MONGODB_ADMINUSERNAME"
+    value: "root"
+  - name: "ME_CONFIG_MONGODB_ADMINPASSWORD"
+    value: "1234"
+  - name: "ME_CONFIG_MONGODB_URL"
+    value: "mongodb://root:1234@waguwagu-waguwagu-mongo:27017/"
+  - name: "ME_CONFIG_BASICAUTH"
+    value: "false"
 
 autoscaling:
   enabled: false

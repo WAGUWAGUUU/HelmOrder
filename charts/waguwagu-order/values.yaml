@@ -42,12 +42,16 @@ resources: {}
 
 
 env:
-  - name: SPRING_DATA_MONGODB_URI
-    value: mongodb://root:example@waguwagu-waguwagu-mongo:27017/waguwagu
+  - name: "SPRING_DATA_MONGODB_URI"
+    value: "mongodb://waguwagu-waguwagu-mongo:27017/waguwagu"
   - name: SPRING_DATA_REDIS_HOST
     value: waguwagu-waguwagu-redis
   - name: SPRING_DATA_REDIS_PORT
     value: "6379"
+  - name: "SPRING_DATA_MONGODB_USERNAME"
+    value: "root"
+  - name: "SPRING_DATA_MONGODB_PASSWORD"
+    value: "1234"
     
 autoscaling:
   enabled: false
